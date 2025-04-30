@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(33, 0, 0);
+            color: white;
+            font-family: "Roboto Slab", serif;
+        }
+
+        nav {
+            background-color: rgb(77, 11, 11);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: tomato;
+            font-size: 16.2px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+            }
+
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+        }
+
+        main hr {
+            border: 1px;
+            background: tomato;
+            height: 2px;
+            margin: 40px 104px;
+        }
+
+        .left {
+            font-size: 30px;
+            margin-right: 0;
+        }
+
+        .left a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstSection>div {
+            width: 40%;
+        }
+
+        .leftSec {
+            font-size: 36px;
+            margin-left: 70px;
+            font-weight: 500;
+        }
+
+        .kp {
+            color: rgb(211, 119, 119);
+        }
+
+        .rightSec img {
+            width: 50%;
+            margin: 15px 120px;
+        }
+
+        .secondSection {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .secondSection div {
+            width: 40%;
+            margin-left: 150px;
+        }
+
+        .Secondright {
+            margin-right: 100px;
+            align-items: justify;
+        }
+
+        .quoteSection {
+            margin: 80px 0;
+            text-align: center;
+        }
+
+        .quote-container {
+            background-color: rgb(77, 11, 11);
+            padding: 40px;
+            border-radius: 15px;
+            width: 60%;
+            margin: auto;
+            position: relative;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .quote {
+            font-size: 24px;
+            color: tomato;
+            margin-bottom: 20px;
+        }
+
+        .author {
+            font-size: 18px;
+            color: white;
+        }
+
+        .arrow {
+            font-size: 30px;
+            color: cornsilk;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            user-select: none;
+        }
+
+        .left-arrow {
+            left: 20px;
+        }
+
+        .right-arrow {
+            right: 20px;
+        }
+
+        /* Make paragraphs scale and wrap well on small screens */
+        @media (max-width: 768px) {
+
+            .firstSection,
+            .secondSection {
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .firstSection>div,
+            .secondSection>div {
+                width: 100% !important;
+                margin: 10px 0;
+            }
+
+            .leftSec {
+                font-size: 24px;
+                margin: 10px 0;
+            }
+
+            .rightSec img {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .Secondright h4 {
+                font-size: 16px;
+                line-height: 1.6;
+                padding: 10px;
+            }
+
+            .Secondleft h2 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            .quote-container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(239, 224, 221);
+            color: black;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="index.html">Kevin Patel</a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="firstSection">
+            <div class="leftSec">Hello!! My Name is
+                <span class="kp">Kevin J. Patel</span>
+                <div>and I'm Student of</div>
+                <div>Computer Science & Engineering</div>
+            </div>
+            <div class="rightSec">
+                <img src="kp.jpg">
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondSection">
+            <div class="Secondleft">
+                <h2>About Me</h2>
+            </div>
+            <div class="Secondright">
+                <h4>I was born and grew up in Surat. I am a third-year Computer science and Engineering student at SNPIT
+                    & RC.<br><br>
+                    I completed my schooling at P.P.Savani Vidhyabhavan at Hirabaugh, where i built a strong foundation
+                    in mathematics and science which fueled my passion for technology.<br><br>
+                    Today, I am passionate about building efficient,scalable software solutions and constantly exploring
+                    new technologies. My interests lie in Wed Development and Cybersecurity. I enjoy solving real-world
+                    problems through codes.<br><br>
+                    I have Experience working with languages like C, Java, Python, Html, CSS, Javascript and
+                    technologies such as MySQL. I love to solve the errors happening in codes.<br><br>
+                    Along with my passion for technology, I have a keen interest in exploring historical data about
+                    india and staying updated with current news and global trends.I believe understanding past and
+                    present helps in building better technological solutions for future.</h4>
+            </div>
+
+        </section>
+
+
+        <section class="quoteSection">
+            <div class="quote-container">
+                <div class="arrow left-arrow" onclick="prevQuote()">&#8592;</div>
+                <div class="arrow right-arrow" onclick="nextQuote()">&#8594;</div>
+                <div class="quote" id="quoteText">"Take the stones people throw at you, and use them to build a
+                    monument."</div>
+                <div class="author" id="quoteAuthor"> Sir Ratan Tata</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> Kevin J. Patel. All rights reserved.
+    </footer>
+    <script src="qoute.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About --- Kevin's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(33, 0, 0);
+            color: white;
+            font-family: "Roboto Slab", serif;
+        }
+
+        nav {
+            background-color: rgb(77, 11, 11);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: tomato;
+            font-size: 16.2px;
+        }
+
+        .left {
+            font-size: 30px;
+            margin-right: 0;
+        }
+
+        .left a {
+            text-decoration: none;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+            }
+
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+        }
+
+        .about {
+
+            margin: 50px 70px;
+        }
+
+        .head {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .skillsSection {
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: rgb(249, 118, 95);
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill {
+            background-color: gray;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .skill:hover {
+            background-color: rgb(249, 118, 95);
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(239, 224, 221);
+            color: black;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        button {
+            background-color: tomato;
+            color: white;
+            margin-top: 30px;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(240, 80, 60);
+        }
+
+
+        /* Responsive for mobile */
+        @media (max-width: 900px) {
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">
+                <a href="index.html">Kevin Patel</a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="head">
+                <h1>About</h1><br>
+            </div>
+            <h4>I am passionate about building efficient,scalable software solutions and constantly exploring new
+                technologies. My interests lie in Wed Development and Cybersecurity. I enjoy solving real-world problems
+                through codes.
+                I have Experience working with languages like C, Java, Python, Html, CSS, Javascript and technologies
+                such as MySQL. I love to solve the errors happening in codes.</h4>
+
+            <a href="resume.pdf" target="_blank" download>
+                <button>Download My Resume</button>
+            </a>
+
+        </section>
+
+        <section class="skillsSection" id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill" onclick="redirectTo('https://www.w3schools.com/c/')">C Programming</div>
+                <div class="skill" onclick="redirectTo('https://www.w3schools.com/java/')">Java</div>
+                <div class="skill" onclick="redirectTo('https://www.w3schools.com/python/')">Python</div>
+                <div class="skill" onclick="redirectTo('https://www.w3schools.com/javascript/')">JavaScript</div>
+                <div class="skill" onclick="redirectTo('https://www.w3schools.com/MySQL/')">MySQL</div>
+                <div class="skill" onclick="redirectTo('https://www.w3schools.com/html/')">HTML</div>
+                <div class="skill" onclick="redirectTo('https://www.w3schools.com/css/')">CSS</div>
+                <div class="skill" onclick="redirectTo('https://www.w3schools.com/php/')">PHP</div>
+            </div>
+            <script>
+                function redirectTo(url) {
+                    window.location.href = url;
+                }
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> Kevin J. Patel. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
